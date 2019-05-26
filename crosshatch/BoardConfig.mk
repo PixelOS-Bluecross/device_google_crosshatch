@@ -19,3 +19,5 @@ TARGET_SCREEN_DENSITY := 560
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 165
 
 include device/google/crosshatch/BoardConfig-common.mk
+
+-include vendor/google/crosshatch/BoardConfigVendor.mk
