@@ -1001,6 +1001,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.verbose_logging_enabled=false
 endif
 
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # Pixel Logger
 include hardware/google/pixel/PixelLogger/PixelLogger.mk
 
