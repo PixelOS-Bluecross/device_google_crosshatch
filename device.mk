@@ -904,6 +904,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # wow
 PRODUCT_HOST_PACKAGES += brotli
 
+# Force triple frame buffers
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
 # Enable blurs
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1 \
