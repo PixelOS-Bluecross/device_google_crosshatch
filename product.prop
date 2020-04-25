@@ -6,6 +6,10 @@ ro.product.brand=google
 ro.product.name=redfin
 ro.product.model=Pixel 5
 
+# dex2oat64
+dalvik.vm.dex2oat64.enabled=true
+ro.sys.fw.dex2oat_thread_count=8
+
 persist.rild.nitz_plmn=
 persist.rild.nitz_long_ons_0=
 persist.rild.nitz_long_ons_1=
