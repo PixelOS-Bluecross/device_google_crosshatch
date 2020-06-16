@@ -677,6 +677,18 @@
       "Node": "DisplayWakeup",
       "Duration": 60,
       "Value": "1"
+    },
+    {
+      "PowerHint": "Flipendo",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 0,
+      "Value": "1420800"
+    },
+    {
+      "PowerHint": "Flipendo",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 0,
+      "Value": "1996800"
     }
   ]
 }
