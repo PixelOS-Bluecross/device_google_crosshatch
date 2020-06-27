@@ -1,3 +1,10 @@
+# Pixel identification
+ro.build.fingerprint=google/flame/flame:10/QQ3A.200605.001/6392402:user/release-keys
+ro.product.manufacturer=Google
+ro.product.device=flame
+ro.product.brand=google
+ro.product.name=flame
+ro.product.model=Pixel 4
 
 persist.rild.nitz_plmn=
 persist.rild.nitz_long_ons_0=
