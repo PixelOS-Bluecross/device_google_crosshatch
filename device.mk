@@ -872,3 +872,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.protected_contents=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.apex.updatable=true
+
+# h!os
+PRODUCT_HOST_PACKAGES += brotli

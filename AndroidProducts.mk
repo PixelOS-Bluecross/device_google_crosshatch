@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_crosshatch.mk \
-    $(LOCAL_DIR)/aosp_blueline.mk \
+    $(LOCAL_DIR)/hentai_crosshatch.mk \
+    $(LOCAL_DIR)/hentai_blueline.mk \
 
 COMMON_LUNCH_CHOICES := \
-    aosp_crosshatch-userdebug \
-    aosp_blueline-userdebug
+    hentai_crosshatch-user \
+    hentai_blueline-user
