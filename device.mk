@@ -445,6 +445,20 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libc2dcolorconvert
 
+# NOS
+PRODUCT_PACKAGES += \
+    libnos \
+    libnos_client_citadel \
+    libnosprotos \
+    nos_app_avb \
+    nos_app_keymaster \
+    nos_app_weaver
+
+# Codec2
+PRODUCT_PACKAGES += \
+    libcodec2_vndk.vendor \
+    libcodec2_hidl@1.0.vendor
+
 # Enable Codec 2.0
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2 \
