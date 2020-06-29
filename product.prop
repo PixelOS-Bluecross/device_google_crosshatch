@@ -1,7 +1,7 @@
 # Pixel identification
 ro.build.fingerprint=google/flame/flame:10/QQ3A.200605.001/6392402:user/release-keys
 ro.product.manufacturer=Google
-ro.product.device=flame
+ro.product.device=crosshatch
 ro.product.brand=google
 ro.product.name=flame
 ro.product.model=Pixel 4
