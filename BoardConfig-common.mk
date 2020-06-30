@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+COMMON_PATH := device/google/crosshatch
+
 include build/make/target/board/BoardConfigMainlineCommon.mk
 
 TARGET_BOARD_PLATFORM := sdm845
