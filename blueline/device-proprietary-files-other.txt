@@ -1,3 +1,7 @@
+# Audio
+product/etc/firmware/music_detector.descriptor
+product/etc/firmware/music_detector.sound_model
+
 # Bluetooth
 product/lib64/libaptX_encoder.so
 product/lib64/libaptXHD_encoder.so
