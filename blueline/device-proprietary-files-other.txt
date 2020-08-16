@@ -14,8 +14,8 @@ product/lib64/libaptXHD_encoder.so
 product/etc/cne/andsfCne.xml
 product/lib/vendor.google.wifi_ext@1.0.so
 product/lib64/vendor.google.wifi_ext@1.0.so
--product/priv-app/EuiccGoogle/EuiccGoogle.apk
--product/priv-app/EuiccSupportPixel/EuiccSupportPixel.apk
+-product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+-product/priv-app/EuiccSupportPixel/EuiccSupportPixel.apk;PRESIGNED
 product/priv-app/EuiccSupportPixel/esim-full-v0.img
 product/priv-app/EuiccSupportPixel/esim-v1.img
 
