@@ -901,8 +901,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     media.mediadrmservice.enable=true
 
-# h!os
+# wow
 PRODUCT_HOST_PACKAGES += brotli
+
+# Enable blurs
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=1
 
 # EUICC
 PRODUCT_COPY_FILES += \
