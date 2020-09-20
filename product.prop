@@ -1,10 +1,10 @@
 # Pixel identification
-ro.build.fingerprint=google/flame/flame:11/RP1A.200720.009/6720564:user/release-keys
+ro.build.fingerprint=google/sunfish/sunfish:11/RP1A.200720.010/6722941:user/release-keys
 ro.product.manufacturer=Google
 ro.product.device=crosshatch
 ro.product.brand=google
-ro.product.name=flame
-ro.product.model=Pixel 4
+ro.product.name=sunfish
+ro.product.model=Pixel 4a
 
 persist.rild.nitz_plmn=
 persist.rild.nitz_long_ons_0=
