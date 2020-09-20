@@ -23,7 +23,7 @@ DEVICE=blueline
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-LINEAGE_ROOT="$MY_DIR"/../../..
+LINEAGE_ROOT="$MY_DIR"/../../../..
 
 HELPER="$LINEAGE_ROOT"/vendor/hentai/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
@@ -51,7 +51,7 @@ fi
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
 
-extract "$MY_DIR"/../crosshatch/"$DEVICE"/device-proprietary-files.txt "$SRC"
-extract "$MY_DIR"/../crosshatch/"$DEVICE"/device-proprietary-files-other.txt "$SRC"
+extract "$MY_DIR"/device-proprietary-files.txt "$SRC"
+extract "$MY_DIR"/device-proprietary-files-other.txt "$SRC"
 
-"$MY_DIR"/../crosshatch/"$DEVICE"/setup-makefiles.sh
+"$MY_DIR"/setup-makefiles.sh
