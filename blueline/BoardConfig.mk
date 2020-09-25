@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/google/crosshatch/blueline
-
 TARGET_BOOTLOADER_BOARD_NAME := blueline
 TARGET_SCREEN_DENSITY := 440
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 20
