@@ -931,7 +931,9 @@ PRODUCT_PACKAGES += \
 
 # To be removed?
 PRODUCT_PACKAGES += \
+    libhwbinder \
     libhwbinder.vendor \
+    libhidltransport \
     libhidltransport.vendor
 
 # Vendor verbose logging default property
