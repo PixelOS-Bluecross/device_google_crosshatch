@@ -50,4 +50,4 @@ PRODUCT_NAME := hentai_blueline
 PRODUCT_DEVICE := blueline
 PRODUCT_MODEL := Pixel 3
 
-$(call inherit-product-if-exists, vendor/google/blueline/blueline-vendor.mk)
+$(call inherit-product, vendor/google/blueline/blueline-vendor.mk)
