@@ -1,5 +1,5 @@
 # Pixel identification
-ro.build.fingerprint=google/sunfish/sunfish:11/RP1A.200720.010/6722941:user/release-keys
+ro.build.fingerprint=google/sunfish/sunfish:11/RP1A.201005.006/6828489:user/release-keys
 ro.product.manufacturer=Google
 ro.product.device=crosshatch
 ro.product.brand=google
