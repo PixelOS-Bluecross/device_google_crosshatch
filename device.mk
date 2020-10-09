@@ -937,7 +937,8 @@ PRODUCT_PACKAGES += \
 # Utilities
 PRODUCT_PACKAGES += \
     libjson \
-    libtinyxml
+    libtinyxml \
+    libsdsprpc
 
 # To be removed?
 PRODUCT_PACKAGES += \
