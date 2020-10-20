@@ -26,13 +26,14 @@ cc_library {
     ],
     cflags: [
         "-Wall",
+        "-Werror",
     ],
     srcs: [
         "gpt-utils.cpp",
     ],
     owner: "qti",
     header_libs: [
-        "//vendor/hentai/build/soong/generator:generated_kernel_headers",
+        "device_kernel_headers",
     ],
     export_include_dirs: ["."],
 }
