@@ -1,10 +1,10 @@
 # Pixel identification
-ro.build.fingerprint=google/sunfish/sunfish:11/RP1A.201005.006/6828489:user/release-keys
+ro.build.fingerprint=google/redfin/redfin:11/RD1A.200810.020/6792687:user/release-keys
 ro.product.manufacturer=Google
 ro.product.device=crosshatch
 ro.product.brand=google
-ro.product.name=sunfish
-ro.product.model=Pixel 4a
+ro.product.name=redfin
+ro.product.model=Pixel 5
 
 persist.rild.nitz_plmn=
 persist.rild.nitz_long_ons_0=
