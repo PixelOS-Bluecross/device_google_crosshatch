@@ -569,13 +569,13 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle
 
 PRODUCT_PACKAGES += \
+    audio.primary.sdm845 \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
     libaudio-resampler \
     audio.hearing_aid.default \
-    audio.bluetooth.default \
-    libtinycompress
+    audio.bluetooth.default
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl:32 \
