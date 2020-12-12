@@ -487,6 +487,7 @@ vendor/lib64/android.hardware.keymaster@4.1-impl.nos.so
 vendor/lib64/android.hardware.oemlock@1.0-impl.nos.so
 vendor/lib64/android.hardware.weaver@1.0-impl.nos.so
 vendor/lib64/btaudio_offload_if.so
+vendor/lib64/google_wifi_firmware_config_info_cc_proto.so
 vendor/lib64/camera/com.google.tuned.pixel3_imx355_normal.bin
 vendor/lib64/camera/com.google.tuned.pixel3_imx355_wide.bin
 vendor/lib64/camera/com.google.tuned.pixel3_imx363.bin
