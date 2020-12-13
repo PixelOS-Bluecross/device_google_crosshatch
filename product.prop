@@ -4,7 +4,7 @@ ro.product.manufacturer=Google
 ro.product.device=crosshatch
 ro.product.brand=google
 ro.product.name=redfin
-ro.product.model=Pixel 5
+ro.product.model=Pixel 4a (5G)
 
 # dex2oat64
 dalvik.vm.dex2oat64.enabled=true
