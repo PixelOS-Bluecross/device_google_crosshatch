@@ -38,7 +38,6 @@ vendor/bin/athdiag
 vendor/bin/audioflacapp
 vendor/bin/ccid_daemon
 vendor/bin/cdsprpcd
-vendor/bin/chre
 vendor/bin/cnd
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag

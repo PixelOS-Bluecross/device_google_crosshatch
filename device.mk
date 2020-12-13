@@ -946,10 +946,12 @@ PRODUCT_PACKAGES += \
 
 # To be removed?
 PRODUCT_PACKAGES += \
-    libhwbinder \
     libhwbinder.vendor \
-    libhidltransport \
     libhidltransport.vendor
+
+# Context Hub Runtime Environment
+PRODUCT_PACKAGES += \
+    chre
 
 # Vendor verbose logging default property
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
@@ -966,3 +968,4 @@ include hardware/google/pixel/thermal/device.mk
 
 # power HAL
 -include hardware/google/pixel/power-libperfmgr/aidl/device.mk
+
