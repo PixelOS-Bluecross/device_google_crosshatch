@@ -6,6 +6,13 @@ ro.product.brand=google
 ro.product.name=redfin
 ro.product.model=Pixel 4a (5G)
 
+# Missing props from build.prop diff
+persist.vendor.radio.mt_sms_ack=30
+ro.storage_manager.enabled=true
+ro.com.android.prov_mobiledata=false
+vendor.power.pasr.enabled=true
+ro.zram.first_wb_delay_mins=1440
+
 # dex2oat64
 dalvik.vm.dex2oat64.enabled=true
 ro.sys.fw.dex2oat_thread_count=8
