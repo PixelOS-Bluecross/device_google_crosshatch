@@ -1090,6 +1090,7 @@ vendor/lib/vendor.display.postproc@1.0.so
 vendor/lib/vendor.google_paintbox@1.0.so
 vendor/lib/vendor.google.radioext@1.0.so
 vendor/lib/vendor.google.radioext@1.1.so
+vendor/lib/vendor.google.radioext@1.2.so
 vendor/lib/vendor.qti.esepowermanager@1.0.so
 vendor/lib/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
