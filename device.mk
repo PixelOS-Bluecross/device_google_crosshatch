@@ -547,6 +547,10 @@ PRODUCT_PACKAGES += \
     wificond \
     libwpa_client \
     WifiOverlay
+    
+# Active Edge graphic
+PRODUCT_PACKAGES += \
+    ActiveEdgeOverlayHentai
 
 LIB_NL := libnl_2
 PRODUCT_PACKAGES += $(LIB_NL)
