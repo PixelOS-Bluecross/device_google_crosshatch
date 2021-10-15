@@ -15,7 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-<<<<<<< HEAD
     $(LOCAL_DIR)/hentai_crosshatch.mk \
     $(LOCAL_DIR)/hentai_blueline.mk \
 
