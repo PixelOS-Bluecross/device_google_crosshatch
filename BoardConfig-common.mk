@@ -40,6 +40,7 @@ TARGET_BOARD_COMMON_PATH := device/google/crosshatch/sdm845
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=green androidboot.veritym>
 BOARD_KERNEL_CMDLINE += androidboot.vbmeta.device_state=locked
