@@ -252,7 +252,7 @@ vendor/etc/sensors/registry/sns_device_orient.json
 vendor/etc/sensors/registry/sns_diag_filter.json
 vendor/etc/sensors/registry/sns_distance_bound.json
 vendor/etc/sensors/registry/sns_facing.json
-vendor/etc/sensors/registry/sns_fms.json
+vendor/etc/sensors/registry/sns_fmv.json
 vendor/etc/sensors/registry/sns_geomag_rv.json
 vendor/etc/sensors/registry/sns_gyro_cal.json
 vendor/etc/sensors/registry/sns_pedometer.json
