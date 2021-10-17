@@ -342,6 +342,15 @@ PRODUCT_PACKAGES += \
     gralloc.sdm845 \
     android.hardware.graphics.mapper@2.0-impl-qti-display \
     vendor.qti.hardware.display.allocator@1.0-service
+    
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.1.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.radio@1.3.vendor \
+    android.hardware.authsecret@1.0.vendor \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.weaver@1.0.vendor \
+    android.hardware.neuralnetworks@1.3.vendor 
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -376,6 +385,7 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth SoC
 PRODUCT_PROPERTY_OVERRIDES += \
+    android.hardware.bluetooth@1.0.vendor \
     vendor.qcom.bluetooth.soc=cherokee
 
 # Property for loading BDA from device tree
@@ -393,10 +403,35 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DRM HAL
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4.vendor \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.3-service.widevine
+    
+# Gatekeeper HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    
+# OEMLock
+PRODUCT_PACKAGES += \
+    android.hardware.oemlock@1.0.vendor
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0.vendor \
+    android.frameworks.sensorservice@1.0.vendor
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0.vendor \
+    android.hardware.keymaster@4.0.vendor
+
+# Gralloc
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@3.0-impl \
+    android.hardware.graphics.allocator@4.0-impl \
 
 # NFC and Secure Element packages
 PRODUCT_PACKAGES += \
@@ -557,6 +592,7 @@ endif
 
 # Wifi
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.5.vendor \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
     libwifi-hal \
@@ -731,6 +767,8 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
+    android.frameworks.stats@1.0.vendor \
+    android.hardware.biometrics.fingerprint@2.2.vendor \
     android.hardware.biometrics.fingerprint@2.1-service.fpc
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.fingerprint.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.fingerprint.sh \
