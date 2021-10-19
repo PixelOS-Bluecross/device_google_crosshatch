@@ -1,5 +1,5 @@
 # Pixel identification
-ro.build.fingerprint=google/redfin/redfin:12/SPB5.210812.002/7671067:user/release-keys
+ro.build.fingerprint=google/redfin/redfin:12/SP1A.210812.015/7679548:user/release-keys
 ro.product.manufacturer=Google
 ro.product.device=crosshatch
 ro.product.brand=google
