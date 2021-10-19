@@ -380,12 +380,12 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth HAL
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.0-service-qti
 
 # Bluetooth SoC
 PRODUCT_PROPERTY_OVERRIDES += \
-    android.hardware.bluetooth@1.0.vendor \
     vendor.qcom.bluetooth.soc=cherokee
 
 # Property for loading BDA from device tree
