@@ -228,6 +228,15 @@
         <instance>default</instance>
     </interface>
 </hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.graphics.mapper</name>
+    <version>3.0</version>
+    <version>4.0</version>
+    <interface>
+        <name>IMapper</name>
+        <instance>default</instance>
+    </interface>
+</hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.media.c2</name>
         <version>1.0</version>
