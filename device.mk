@@ -426,13 +426,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor \
     android.hardware.keymaster@4.0.vendor
-
-# Gralloc
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0-impl \
-    android.hardware.graphics.allocator@3.0-impl \
-    android.hardware.graphics.allocator@4.0-impl \
-
+    
 # NFC and Secure Element packages
 PRODUCT_PACKAGES += \
     NfcNci \
@@ -991,7 +985,6 @@ PRODUCT_PACKAGES += \
 
 # Pixel Logger
 include hardware/google/pixel/PixelLogger/PixelLogger.mk
-
 include hardware/google/pixel/pixelstats/device.mk
 include hardware/google/pixel/mm/device_legacy.mk
 include hardware/google/pixel/thermal/device.mk
