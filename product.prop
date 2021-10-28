@@ -1,10 +1,10 @@
 # Pixel identification
-ro.build.fingerprint=google/redfin/redfin:12/SP1A.210812.015/7679548:user/release-keys
+ro.build.fingerprint=google/raven/raven:12/SD1A.210817.015.A4/7697517:user/release-keys
 ro.product.manufacturer=Google
 ro.product.device=crosshatch
 ro.product.brand=google
-ro.product.name=redfin
-ro.product.model=Pixel 5
+ro.product.name=raven
+ro.product.model=Pixel 6 Pro
 
 # Missing props from build.prop diff
 persist.vendor.radio.mt_sms_ack=30
