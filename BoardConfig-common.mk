@@ -319,8 +319,9 @@ ODM_MANIFEST_G013D_FILES := device/google/crosshatch/nfc/manifest_se_eSE1.xml
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
-# ConfirmationUI
+# Pixel-wide sepolicy
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/confirmationui_hal
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/googlebattery
 
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/b1c1-setup.sh
