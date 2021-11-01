@@ -1,5 +1,5 @@
 # Pixel identification
-ro.build.fingerprint=google/raven/raven:12/SD1A.210817.015.A4/7697517:user/release-keys
+ro.build.fingerprint=google/raven/raven:12/SD1A.210817.036/7805805:user/release-keys
 ro.product.manufacturer=Google
 ro.product.device=crosshatch
 ro.product.brand=google
