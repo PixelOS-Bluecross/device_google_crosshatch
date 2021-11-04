@@ -344,13 +344,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator@1.0-service
     
 PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.1.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio@1.3.vendor \
-    android.hardware.authsecret@1.0.vendor \
-    android.system.net.netd@1.1.vendor \
-    android.hardware.weaver@1.0.vendor \
-    android.hardware.neuralnetworks@1.3.vendor 
+    android.hardware.radio.config@1.1.vendor:64 \
+    android.hardware.radio.deprecated@1.0.vendor:64 \
+    android.hardware.radio@1.3.vendor:64 \
+    android.hardware.authsecret@1.0.vendor:64 \
+    android.system.net.netd@1.1.vendor:64 \
+    android.hardware.weaver@1.0.vendor:64 \
+    android.hardware.neuralnetworks@1.3.vendor:64
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -368,6 +368,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.qcom \
     hardware.google.light@1.0-service
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.lights=qcom
 
@@ -403,7 +404,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DRM HAL
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor \
+    android.hardware.drm@1.4.vendor:64 \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
@@ -415,7 +416,7 @@ PRODUCT_PACKAGES += \
     
 # OEMLock
 PRODUCT_PACKAGES += \
-    android.hardware.oemlock@1.0.vendor
+    android.hardware.oemlock@1.0.vendor:64
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -462,23 +463,22 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libstagefrighthw \
     libOmxVdec \
-    libOmxVdecHevc \
     libOmxVenc \
     libc2dcolorconvert
 
 # NOS
 PRODUCT_PACKAGES += \
-    libnos \
-    libnos_client_citadel \
-    libnosprotos \
-    nos_app_avb \
-    nos_app_keymaster \
-    nos_app_weaver
+    libnos:64 \
+    libnos_client_citadel:64 \
+    libnosprotos:64 \
+    nos_app_avb:64 \
+    nos_app_keymaster:64 \
+    nos_app_weaver:64
 
 # Codec2
 PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
-    libcodec2_hidl@1.0.vendor
+    libcodec2_hidl@1.0.vendor:32
 
 # Enable Codec 2.0
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -509,9 +509,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64 \
     camera.device@3.2-impl \
     camera.sdm845 \
-    libqomx_core \
-    libmmjpeg_interface \
-    libmmcamera_interface \
     libcameradepthcalibrator
 
 # Google Camera HAL test libraries in debug builds
@@ -586,7 +583,7 @@ endif
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.5.vendor \
+    android.hardware.wifi@1.5.vendor:64 \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
     libwifi-hal \
@@ -732,9 +729,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
-PRODUCT_PACKAGES += \
-    vndk-sp
-
 # Override heap growth limit due to high display density on device
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapgrowthlimit?=256m
@@ -761,8 +755,8 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.frameworks.stats@1.0.vendor \
-    android.hardware.biometrics.fingerprint@2.2.vendor \
+    android.frameworks.stats@1.0.vendor:64 \
+    android.hardware.biometrics.fingerprint@2.2.vendor:64 \
     android.hardware.biometrics.fingerprint@2.1-service.fpc
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.fingerprint.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.fingerprint.sh \
@@ -927,7 +921,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.protected_contents=true
 
 PRODUCT_PACKAGES += \
     libdisplayconfig \
-    vendor.display.config@1.8 \
     vendor.display.config@1.8.vendor
 
 # APEX
