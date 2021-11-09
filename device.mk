@@ -593,8 +593,7 @@ PRODUCT_PACKAGES += \
     
 # Active Edge graphic
 PRODUCT_PACKAGES += \
-    ActiveEdgeOverlayHentai
-
+    ActiveEdgeOverlayPixel
 # Connectivity
 PRODUCT_PACKAGES += \
     ConnectivityOverlay

@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/hentai_crosshatch.mk \
-    $(LOCAL_DIR)/hentai_blueline.mk \
+    $(LOCAL_DIR)/pixel_crosshatch.mk \
+    $(LOCAL_DIR)/pixel_blueline.mk \
 
 COMMON_LUNCH_CHOICES := \
-    hentai_crosshatch-user \
-    hentai_blueline-user
+    pixel_crosshatch-user \
+    pixel_blueline-user
