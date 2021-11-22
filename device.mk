@@ -382,8 +382,6 @@ PRODUCT_PACKAGES += \
 # Bluetooth HAL
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth@1.0-impl-qti \
-    android.hardware.bluetooth@1.0-service-qti
 
 # Bluetooth SoC
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -500,7 +498,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGES += \
     libqcodec2 \
-    vendor.qti.media.c2@1.0-service \
     codec2.vendor.ext.policy \
     codec2.vendor.base.policy
 
@@ -517,10 +514,7 @@ PRODUCT_PACKAGES_DEBUG += \
     libgoogle_camera_hal_tests
 
 PRODUCT_PACKAGES += \
-    sensors.$(PRODUCT_HARDWARE) \
-    android.hardware.sensors@2.0-impl \
-    android.hardware.sensors@2.0-service \
-    android.hardware.sensors@2.0-service.rc
+    sensors.$(PRODUCT_HARDWARE)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:vendor/etc/sensors/hals.conf
