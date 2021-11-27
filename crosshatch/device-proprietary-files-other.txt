@@ -11,6 +11,12 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 -product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;PRESIGNED
 -product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk;PRESIGNED
 
+# Dreamliner
+-product/priv-app/DreamlinerUpdater/DreamlinerUpdater.apk;PRESIGNED
+-product/priv-app/DreamlinerPrebuilt/DreamlinerPrebuilt.apk;PRESIGNED
+product/etc/sysconfig/dreamliner.xml
+product/etc/permissions/com.google.android.apps.dreamliner.xml
+
 # Radio
 product/etc/cne/andsfCne.xml
 system_ext/lib/vendor.google.wifi_ext@1.0.so
