@@ -47,8 +47,6 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     AvoidAppsInCutoutOverlay
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    iorapd.perfetto.enable=true
 # Enable iorapd readahead for app starts
 PRODUCT_PRODUCT_PROPERTIES += \
     iorapd.readahead.enable=true
