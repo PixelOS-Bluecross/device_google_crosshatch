@@ -1,7 +1,6 @@
 # Pixel identification
 ro.build.fingerprint=google/redfin/redfin:12/SQ1A.211205.008/7888514:user/release-keys
 ro.product.manufacturer=Google
-ro.product.device=crosshatch
 ro.product.brand=google
 ro.product.name=redfin
 ro.product.model=Pixel 5
