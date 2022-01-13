@@ -596,6 +596,7 @@ PRODUCT_PACKAGES += \
 # Active Edge graphic
 PRODUCT_PACKAGES += \
     ActiveEdgeOverlayPixel
+    
 # Connectivity
 PRODUCT_PACKAGES += \
     ConnectivityOverlay
