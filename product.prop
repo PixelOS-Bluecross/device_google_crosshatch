@@ -1,5 +1,5 @@
 # Pixel identification
-ro.build.fingerprint=google/redfin/redfin:12/SP2A.220505.002/8353555:user/release-keys
+ro.build.fingerprint=google/redfin/redfin:12/SQ3A.220605.009.A1/8643238:user/release-keys
 ro.product.manufacturer=Google
 ro.product.brand=google
 ro.product.name=redfin
