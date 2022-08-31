@@ -436,10 +436,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0.vendor \
     android.frameworks.sensorservice@1.0.vendor
 
-# Shims
-PRODUCT_PACKAGES += \
-    lib-secureuishim
-
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor \
@@ -782,8 +778,8 @@ PRODUCT_COPY_FILES += \
 # CS40L20 Haptics Waveform & Firmware
 PRODUCT_COPY_FILES += \
     device/google/crosshatch/vibrator/cs40l20/cs40l20.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l20.wmfw \
-    device/google/crosshatch/vibrator/cs40l20/cs40l20.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l20.bin
-
+    device/google/crosshatch/vibrator/cs40l20/cs40l20.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l20.bin\
+    
 PRODUCT_VENDOR_KERNEL_HEADERS := device/google/crosshatch/sdm845/kernel-headers
 
 # Audio ACDB data
@@ -1012,3 +1008,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Set system properties identifying the chipset
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
 PRODUCT_VENDOR_PROPERTIES += ro.soc.model=SDM845
+
+# Shims
+PRODUCT_PACKAGES += \
+    lib-secureuishim

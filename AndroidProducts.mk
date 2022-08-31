@@ -19,5 +19,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/pixel_blueline.mk \
 
 COMMON_LUNCH_CHOICES := \
-    pixel_crosshatch-user \
-    pixel_blueline-user
+    pixel_crosshatch-userdebug \
+    pixel_blueline-userdebug

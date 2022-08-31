@@ -42,6 +42,11 @@ BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
+# DTBO partition definitions
+BOARD_PREBUILT_DTBOIMAGE := device/google/crosshatch-kernel/dtbo.img
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
+
+
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8 androidboot.console=ttyMSM0 printk.devkmsg=on
 BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
 BOARD_KERNEL_CMDLINE += ehci-hcd.park=3
@@ -66,8 +71,7 @@ endif
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # DTBO partition definitions
-BOARD_PREBUILT_DTBOIMAGE := device/google/crosshatch-kernel/dtbo.img
-BOARD_DTBOIMG_PARTITION_SIZE := 8388608
+TARGET_NEEDS_DTBOIMAGE := true
 
 TARGET_NO_KERNEL := false
 BOARD_USES_RECOVERY_AS_BOOT := true
@@ -309,6 +313,10 @@ ODM_MANIFEST_G013D_FILES := device/google/crosshatch/nfc/manifest_se_eSE1.xml
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
+# Pixel-wide sepolicy
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/confirmationui_hal
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/googlebattery
+
 # Kernel modules
 ifeq (,$(filter-out blueline_kasan crosshatch_kasan, $(TARGET_PRODUCT)))
 BOARD_VENDOR_KERNEL_MODULES += \
@@ -316,6 +324,10 @@ BOARD_VENDOR_KERNEL_MODULES += \
 else ifeq (,$(filter-out blueline_kernel_debug_memory crosshatch_kernel_debug_memory, $(TARGET_PRODUCT)))
 BOARD_VENDOR_KERNEL_MODULES += \
     $(wildcard device/google/crosshatch-kernel/debug_memory/*.ko)
+else ifeq (,$(filter-out blueline_kernel_debug_memory_accounting crosshatch_kernel_debug_memory_accounting, $(TARGET_PRODUCT)))
+BOARD_VENDOR_KERNEL_MODULES += \
+    $(wildcard device/google/crosshatch-kernel/debug_memory_accounting/*.ko)
+BOARD_KERNEL_CMDLINE += page_owner=on
 else ifeq (,$(filter-out blueline_kernel_debug_locking crosshatch_kernel_debug_locking, $(TARGET_PRODUCT)))
 BOARD_VENDOR_KERNEL_MODULES += \
     $(wildcard device/google/crosshatch-kernel/debug_locking/*.ko)
@@ -346,6 +358,8 @@ ifeq (,$(filter-out blueline_kasan crosshatch_kasan, $(TARGET_PRODUCT)))
 BOARD_PREBUILT_DTBIMAGE_DIR := device/google/crosshatch-kernel/kasan
 else ifeq (,$(filter-out blueline_kernel_debug_memory crosshatch_kernel_debug_memory, $(TARGET_PRODUCT)))
 BOARD_PREBUILT_DTBIMAGE_DIR := device/google/crosshatch-kernel/debug_memory
+else ifeq (,$(filter-out blueline_kernel_debug_memory_accounting crosshatch_kernel_debug_memory_accounting, $(TARGET_PRODUCT)))
+BOARD_PREBUILT_DTBIMAGE_DIR := device/google/crosshatch-kernel/debug_memory_accounting
 else ifeq (,$(filter-out blueline_kernel_debug_locking crosshatch_kernel_debug_locking, $(TARGET_PRODUCT)))
 BOARD_PREBUILT_DTBIMAGE_DIR := device/google/crosshatch-kernel/debug_locking
 else ifeq (,$(filter-out blueline_kernel_debug_hang crosshatch_kernel_debug_hang, $(TARGET_PRODUCT)))
@@ -365,9 +379,6 @@ else ifneq (,$(TARGET_PREBUILT_KERNEL))
 else
 BOARD_PREBUILT_DTBIMAGE_DIR := device/google/crosshatch-kernel
 endif
-
-BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/confirmationui_hal
-BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/googlebattery
 
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/b1c1-setup.sh
